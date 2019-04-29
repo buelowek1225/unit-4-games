@@ -1,0 +1,53 @@
+body {
+    background: url(../../assets/images/gplaypattern.png);
+}
+h1 {margin: 1em;
+}
+
+.title {
+    background-color: orange;
+}
+.headcontainer {
+    margin: unset;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: unset;
+}
+
+.instruct-text {
+    font-size: 35px;
+}
+
+.directions {
+    background-color: bisque;
+    margin: unset;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.counter {
+    background-color: green;
+}
+
+.tracker {
+    background-color: lightskyblue;
+}
+
+.scoreheader {
+    background-color: teal;
+    margin-top: 20px;
+    margin-bottom:10px;
+}
+
+.scoretotal {
+    background-color: teal;
+    margin-top: 10px;
+    margin-bottom:20px;
+}
+
+.crystal {
+    margin: unset;
+    max-width: 1333px;
+    margin-top: 30px;
+    margin-bottom:30px;
+}
