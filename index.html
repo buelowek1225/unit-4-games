@@ -14,7 +14,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <!--CSS Style Sheet link  -->
-    <link rel="stylesheet" href="assets/css/style.css"/> 
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    
+    <!-- Here we added a link to the jQuery library -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     
     <title>Crystal Collector</title>
 </head>
@@ -33,7 +37,7 @@
     <div class="container directions">
         <div class="row">
             <div class = "col-sm-6">
-                <div class = "instruct-text">You will be given a radom number a the star of the game.
+                <div class = "instruct-text">You will be given a random number at the start of the game.
                     
                     There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
                     <br>
@@ -54,11 +58,13 @@
     <div class="container-tracker">
             <div class="row">
                 <div class = "col-sm-3 counter">
-                    <h1> 39 </h1>
+                    <h1> Number to Guess: <span id="number-to-guess"></span> </h1>
                 </div>
                 <div class = "col-sm-2 tracker">
-                    <h2> Losses </h2>
-                    <h2> Wins </h2>
+                    <h2><b>Losses:</b></h2>
+                    <h2 id="losecounter"></h2> 
+                    <h2><b>Wins:</b></h2>
+                    <h2 id="wincounter"></h2> 
                 </div>
             </div>
         </div>
@@ -67,19 +73,19 @@
     <div class="crystal container">
         <div class="row">
             <div class = "col-sm-3">
-                <div> <img src="assets/images/red-crystal.png"> 
+                <div id="redcrysimage"> <img class="redcrysimage" src="assets/images/red-crystal.png">
                 </div>
             </div>
             <div class = "col-sm-3">
-                <div> <img src="assets/images/orange-crystal.png"> 
+                <div id="orange-crystal"> <img class="orangecrysimage" src="assets/images/orange-crystal.png"> 
                 </div>
             </div>
             <div class = "col-sm-3">
-                <div> <img src="assets/images/blue-crystal.png"> 
+                <div id="blue-crystal"> <img class="bluecrysimage" src="assets/images/blue-crystal.png"> 
                 </div>
             </div>
             <div class = "col-sm-3">
-                <div> <img src="assets/images/purple-crystal.png"> 
+                <div id="purple-crystal"> <img class="purplecrysimage" src="assets/images/purple-crystal.png"> 
                 </div>
             </div>
         </div>
@@ -96,7 +102,7 @@
     <div class="container-scoretotal">
         <div class="row">
             <div class = "col-sm-3 scoretotal">
-                <h1> 0 </h1>
+                <h1 id="yourscore"></h1>
             </div>
         </div>
     </div>
@@ -104,6 +110,14 @@
 </body>
 
  <!-- Javascript link -->
- <script src="assets/javascript/games.js"></script>
+ <script src="assets/javascript/game.js"></script>
 
 </html>
+
+
+
+
+
+
+
+<!-- <img class="redcrysimage" src="assets/images/red-crystal.png" -->
